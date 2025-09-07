@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soul Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              border: "hsl(255 20% 30%)",
+              input: "hsl(255 20% 30%)",
+              ring: "hsl(262 80% 70%)",
+              background: "hsl(255 50% 8%)",
+              foreground: "hsl(240 5% 96%)",
+              primary: {
+                DEFAULT: "hsl(262 80% 60%)",
+                foreground: "hsl(0 0% 100%)",
+              },
+              secondary: {
+                DEFAULT: "hsl(255 50% 12%)",
+                foreground: "hsl(240 5% 96%)",
+              },
+              destructive: {
+                DEFAULT: "hsl(0 63% 94%)",
+                foreground: "hsl(0 84% 60%)",
+              },
+              muted: {
+                DEFAULT: "hsl(255 20% 20%)",
+                foreground: "hsl(240 5% 65%)",
+              },
+              accent: {
+                DEFAULT: "hsl(255 20% 25%)",
+                foreground: "hsl(240 5% 96%)",
+              },
+              popover: {
+                DEFAULT: "hsl(255 50% 12%)",
+                foreground: "hsl(240 5% 96%)",
+              },
+              card: {
+                DEFAULT: "hsl(255 50% 12%)",
+                foreground: "hsl(240 5% 96%)",
+              },
+            },
+            borderRadius: {
+              lg: "0.75rem",
+              md: "0.5rem",
+              sm: "0.25rem",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              headline: ["Poppins", "sans-serif"],
+            },
+            keyframes: {
+              "fade-in": {
+                "0%": { opacity: "0", transform: "translateY(10px) scale(0.98)" },
+                "100%": { opacity: "1", transform: "translateY(0) scale(1)" },
+              },
+            },
+            animation: {
+              "fade-in": "fade-in 0.6s ease-out forwards",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: hsl(255, 50%, 8%);
+        background-image: radial-gradient(circle, hsl(255, 50%, 11%) 0%, hsl(255, 50%, 8%) 100%);
+        min-height: 100vh;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
