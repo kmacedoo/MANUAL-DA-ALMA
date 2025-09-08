@@ -7,9 +7,26 @@ import { ArrowRight } from './components/icons/ArrowRight';
 import { Gift } from './components/icons/Gift';
 import { AnimatedSparkles } from './components/icons/AnimatedSparkles';
 import { CheckCircle } from './components/icons/CheckCircle';
-import { AnimatedCompass } from './components/icons/AnimatedCompass';
 import { ShieldCheck } from './components/icons/ShieldCheck';
 import { quizQuestions } from './constants';
+
+const testimonials = [
+  {
+    quote: "Eu estava presa em um ciclo de autossabotagem... O Guia da Alma foi um divisor de águas. Finalmente entendi a raiz dos meus problemas e hoje vivo com um propósito que nunca imaginei ser possível.",
+    name: "Juliana S.",
+    tag: "Cliente Verificada"
+  },
+  {
+    quote: "Cético no início, mas desesperado. Este guia me deu a clareza que anos de terapia não conseguiram. Simples, direto e transformador. Recomendo de olhos fechados.",
+    name: "Marcos P.",
+    tag: "Cliente Verificado"
+  },
+  {
+    quote: "Parecia que faltava uma peça no quebra-cabeça da minha vida. O Guia me ajudou a encontrar não só a peça, mas a ver a imagem inteira. Sinto uma paz e uma confiança que não sentia há anos.",
+    name: "Carolina M.",
+    tag: "Cliente Verificada"
+  }
+];
 
 export default function App() {
   const [quizStarted, setQuizStarted] = useState(false);
@@ -37,12 +54,10 @@ export default function App() {
       <div className="flex flex-col items-center justify-center min-h-screen p-4 py-12 text-center">
         <Card className="w-full max-w-2xl shadow-2xl bg-card/80 backdrop-blur-sm border-border animate-fade-in">
           <CardHeader>
-             <div className="mx-auto bg-primary rounded-full p-3 w-fit mb-4 shadow-lg shadow-primary/30">
-                <AnimatedCompass className="size-12 text-primary-foreground" />
-             </div>
-            <CardTitle className="font-headline text-3xl md:text-4xl text-foreground">Sente que algo precisa mudar, mas não sabe o quê?</CardTitle>
+            <img src="https://i.imgur.com/Hyz8wV8.png" alt="Análise da Alma" className="rounded-lg w-full max-w-sm mx-auto mb-6 shadow-lg shadow-primary/20" />
+            <CardTitle className="font-headline text-3xl md:text-4xl text-foreground">Desvende o Mapa da Sua Alma</CardTitle>
             <CardDescription className="text-lg pt-2 text-muted-foreground">
-             Suas respostas para as próximas perguntas podem revelar o caminho.
+             Uma análise profunda e gratuita para revelar os bloqueios que te impedem de evoluir. Responda com o coração.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
@@ -71,15 +86,15 @@ export default function App() {
              <div className="mx-auto bg-primary rounded-full p-3 w-fit mb-4 shadow-lg shadow-primary/30">
                 <AnimatedSparkles className="size-12 text-primary-foreground" />
              </div>
-            <CardTitle className="font-headline text-3xl md:text-4xl text-foreground">Sua Análise Está Pronta.</CardTitle>
+            <CardTitle className="font-headline text-3xl md:text-4xl text-foreground">Seu Diagnóstico da Alma está Completo.</CardTitle>
             <CardDescription className="text-lg pt-2 text-muted-foreground">
-              Suas respostas não são coincidência. Elas são um chamado da sua alma por direção.
+              Suas respostas revelaram um padrão claro. E a verdade é que você não chegou até aqui por acaso.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className='text-left space-y-4 text-muted-foreground'>
                 <p>
-                    A sensação de estar perdido(a), os ciclos que se repetem, a voz da intuição que é ignorada, os medos que paralisam... Tudo isso são sintomas de uma desconexão com sua verdadeira essência.
+                    A sensação de estar perdido(a), os ciclos que se repetem, a voz da intuição que é ignorada, os medos que paralisam... Tudo isso são sintomas de uma desconexão com sua verdadeira essência. Suas respostas confirmam isso.
                 </p>
                 <p className='font-semibold text-foreground'>
                     Chega de se sentir à deriva. As respostas que você deu desenharam um mapa da sua alma, e o <span className="text-primary font-bold">Guia da Alma</span> é a chave para decifrá-lo. Esta é a sua chance de parar de repetir os mesmos erros e finalmente tomar as rédeas da sua vida.
@@ -89,9 +104,13 @@ export default function App() {
                 </p>
             </div>
 
-            <Card className="bg-white/5 border-border p-6 space-y-4">
-                 <h3 className="font-headline text-2xl font-bold text-foreground">A Ferramenta Para Sua Transformação</h3>
-                 <div className='text-left space-y-3 text-muted-foreground'>
+            <Card className="bg-white/5 border-border p-6 space-y-4 text-left">
+                 <h3 className="font-headline text-2xl font-bold text-foreground text-center">O Guia da Alma: A Chave Para Sua Transformação</h3>
+                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4 my-4'>
+                    <img src="https://i.imgur.com/QIHZL40.png" alt="Página do Guia da Alma 1" className="rounded-lg shadow-lg w-full" />
+                    <img src="https://i.imgur.com/4zxejUy.png" alt="Página do Guia da Alma 2" className="rounded-lg shadow-lg w-full" />
+                </div>
+                 <div className='space-y-3 text-muted-foreground'>
                     <p className='flex items-start gap-3'><CheckCircle className='size-5 text-green-400 mt-1 shrink-0' /> <span><span className='font-bold text-foreground/90'>Clareza e Direção:</span> Encontre o seu norte e tome decisões com confiança, entendendo seu propósito.</span></p>
                     <p className='flex items-start gap-3'><CheckCircle className='size-5 text-green-400 mt-1 shrink-0' /> <span><span className='font-bold text-foreground/90'>Quebra de Padrões:</span> Entenda a raiz dos ciclos repetitivos e liberte-se deles.</span></p>
                     <p className='flex items-start gap-3'><CheckCircle className='size-5 text-green-400 mt-1 shrink-0' /> <span><span className='font-bold text-foreground/90'>Reconexão Interior:</span> Aprenda a ouvir e a confiar na sua intuição como nunca antes.</span></p>
@@ -99,74 +118,62 @@ export default function App() {
                  </div>
             </Card>
 
-            <Card className="bg-primary/10 border-primary/50 p-6">
-                 <h3 className="font-headline text-2xl font-bold text-foreground">Sua Jornada Começa Agora</h3>
-                 <p className="text-muted-foreground mt-2">Um investimento único no seu bem mais precioso: você.</p>
-                <div className="my-6">
-                    <span className="text-2xl font-bold line-through text-muted-foreground/80">De R$147,00</span>
-                    <p className='text-sm text-primary/80'>por apenas</p>
-                    <span className="text-6xl font-bold font-headline text-primary">R$79,90</span>
-                    <p className="text-muted-foreground mt-1">ou 12x de R$7,90</p>
-                </div>
-                <a href="https://achou-kids-baby.mycartpanda.com/checkout" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="w-full font-bold text-lg py-7 px-10 shadow-lg shadow-primary/40 animate-pulse">
-                        Quero Meu Guia da Alma Agora!
-                    </Button>
-                </a>
-                <p className="mt-4 text-sm text-primary/90 font-semibold flex items-center justify-center gap-2"><Gift className="size-4" /> Oferta especial válida apenas para quem finaliza o quiz!</p>
-                 <div className="mt-6 flex items-center justify-center gap-2 text-muted-foreground">
-                    <ShieldCheck className="size-5 text-green-400" />
-                    <p className="font-semibold text-sm">Garantia de 15 Dias</p>
-                    <p className='text-sm'>| Seu dinheiro 100% de volta</p>
-                </div>
-            </Card>
+            <div className='space-y-4'>
+              <h3 className="font-headline text-2xl font-bold text-foreground text-center">O Que Nossos Guiados Dizem</h3>
+              {testimonials.map((testimonial, index) => (
+                  <Card key={index} className="bg-white/5 border-border p-4 text-left">
+                      <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
+                      <p className="text-right font-semibold text-primary/90 mt-2">- {testimonial.name} <span className='text-xs font-normal text-green-400'>({testimonial.tag})</span></p>
+                  </Card>
+              ))}
+            </div>
+
+            <Button size="lg" className="w-full font-bold text-lg py-7 px-10 shadow-lg shadow-primary/40">
+                QUERO MINHA TRANSFORMAÇÃO AGORA <Gift className="ml-2 h-5 w-5" />
+            </Button>
+            <div className='flex items-center justify-center gap-4 text-xs text-muted-foreground mt-2'>
+                <ShieldCheck className='size-4' />
+                <span>Compra segura | Acesso imediato</span>
+            </div>
           </CardContent>
         </Card>
       </div>
     );
   }
 
-  const currentQ = quizQuestions[currentQuestion];
-
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 py-8">
-       <Card className="w-full max-w-2xl bg-card/80 backdrop-blur-sm border-border">
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 py-12">
+      <Card className="w-full max-w-2xl shadow-2xl bg-card/80 backdrop-blur-sm border-border animate-fade-in">
         <CardHeader>
-            <Progress value={progress} className="w-full mb-4 h-2" />
-            <CardTitle className="font-headline text-2xl text-foreground">Quiz da Alma</CardTitle>
-             <CardDescription className="text-muted-foreground">
-                Responda com o coração.
-             </CardDescription>
+          <Progress value={progress} className="mb-4" />
+          <CardTitle className="font-headline text-2xl md:text-3xl text-foreground">
+            {quizQuestions[currentQuestion].question}
+          </CardTitle>
+          <CardDescription className="pt-2 text-muted-foreground">
+            {quizQuestions[currentQuestion].explanation}
+          </CardDescription>
         </CardHeader>
-        <CardContent>
-          <div className='mb-6'>
-            <h2 className="text-lg font-semibold leading-snug text-foreground/90">{currentQ.question}</h2>
-            <p className='text-sm text-muted-foreground mt-2'>{currentQ.explanation}</p>
-          </div>
+        <CardContent className="space-y-4">
           <div className="space-y-3">
-            {currentQ.options.map((option) => (
-              <div 
-                key={option} 
+            {quizQuestions[currentQuestion].options.map((option) => (
+              <button
+                key={option}
                 onClick={() => setSelectedOption(option)}
-                className={`flex items-center p-4 rounded-lg border-2 transition-all duration-200 cursor-pointer ${selectedOption === option ? 'border-primary bg-primary/10 shadow-md shadow-primary/20' : 'border-border bg-white/5 hover:border-primary/50'}`}
+                className={`w-full p-4 text-left rounded-md transition-all duration-200 border text-foreground/80 hover:bg-accent/80 hover:text-accent-foreground ${
+                  selectedOption === option
+                    ? 'bg-primary/90 text-primary-foreground border-primary'
+                    : 'bg-accent/50 border-border'
+                }`}
               >
-                <div className={`h-5 w-5 shrink-0 rounded-full border-2 flex items-center justify-center transition-colors ${selectedOption === option ? 'border-primary bg-primary' : 'border-muted-foreground/50'}`}>
-                    {selectedOption === option && <div className="h-2 w-2 rounded-full bg-primary-foreground" />}
-                </div>
-                <Label className="pl-4 text-base cursor-pointer w-full text-foreground/90">
-                  {option}
-                </Label>
-              </div>
+                {option}
+              </button>
             ))}
           </div>
-          <div className="mt-8 flex justify-end">
-            <Button onClick={handleNextQuestion} disabled={!selectedOption} size="lg" className="shadow-lg shadow-primary/30">
-              {currentQuestion < quizQuestions.length - 1 ? 'Próxima' : 'Ver Minha Análise'}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
+          <Button onClick={handleNextQuestion} disabled={!selectedOption} size="lg" className="w-full font-bold text-lg py-6 shadow-lg shadow-primary/40">
+            Próxima <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </CardContent>
-       </Card>
+      </Card>
     </div>
   );
 }

@@ -2,7 +2,7 @@
 export const quizQuestions = [
   // Bloco 1: Clareza e Direção
   {
-    question: "1. Ao olhar para sua vida hoje, qual sentimento predomina?",
+    question: "Ao olhar para sua vida hoje, qual sentimento predomina?",
     explanation: "O sentimento geral é como a bússola da sua alma. Ele indica se você está no caminho certo ou se precisa de um novo mapa.",
     options: [
       "Uma sensação de estar perdido(a), sem um mapa claro.",
@@ -12,7 +12,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "2. Qual destas frases descreve melhor seu desejo mais profundo no momento?",
+    question: "Qual destas frases descreve melhor seu desejo mais profundo no momento?",
     explanation: "Seu desejo mais profundo é a voz da sua intuição apontando para o que realmente importa para você agora.",
     options: [
       "“Eu só queria ter clareza sobre qual caminho seguir.”",
@@ -22,7 +22,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "3. Se você tivesse um mapa para sua vida, o que você mais gostaria que ele mostrasse?",
+    question: "Se você tivesse um mapa para sua vida, o que você mais gostaria que ele mostrasse?",
     explanation: "A resposta revela qual área da sua vida mais anseia por direção e clareza neste exato momento.",
     options: [
       "O caminho para a carreira/vocação ideal.",
@@ -32,7 +32,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "4. Com que frequência você se sente apenas 'seguindo o fluxo', sem um destino definido?",
+    question: "Com que frequência você se sente apenas 'seguindo o fluxo', sem um destino definido?",
     explanation: "Muitas vezes, 'seguir o fluxo' é uma forma de evitar decisões importantes. Isso pode levar a uma sensação de estagnação.",
     options: [
       "Quase todos os dias. Sinto que estou no piloto automático.",
@@ -42,7 +42,7 @@ export const quizQuestions = [
     ],
   },
     {
-    question: "5. Imagine que você encontrou sua 'tribo'. Como essas pessoas seriam?",
+    question: "Imagine que você encontrou sua 'tribo'. Como essas pessoas seriam?",
     explanation: "As pessoas com as quais sonhamos em nos conectar refletem as qualidades que valorizamos e desejamos para nós mesmos.",
     options: [
       "Inspiradoras e que me incentivassem a crescer.",
@@ -54,7 +54,7 @@ export const quizQuestions = [
 
   // Bloco 2: Padrões e Autossabotagem
   {
-    question: "6. Seus relacionamentos (amorosos, familiares, amizades) parecem seguir um padrão que se repete?",
+    question: "Seus relacionamentos (amorosos, familiares, amizades) parecem seguir um padrão que se repete?",
     explanation: "Padrões repetitivos em relacionamentos são como ecos de feridas antigas que ainda não foram curadas.",
     options: [
       "Sim, parece que atraio sempre o mesmo tipo de problema.",
@@ -64,7 +64,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "7. Quando algo bom acontece na sua vida, qual é a sua primeira reação interna?",
+    question: "Quando algo bom acontece na sua vida, qual é a sua primeira reação interna?",
     explanation: "Sua reação ao sucesso pode revelar crenças profundas sobre merecimento e o medo de que 'algo vai dar errado'.",
     options: [
       "Uma desconfiança, esperando a 'outra bota cair'.",
@@ -74,7 +74,7 @@ export const quizQuestions = [
     ],
   },
     {
-    question: "8. Qual é a sua principal forma de autossabotagem quando está perto de alcançar um objetivo?",
+    question: "Qual é a sua principal forma de autossabotagem quando está perto de alcançar um objetivo?",
     explanation: "A autossabotagem é um mecanismo de defesa do ego, que teme a mudança e o desconhecido que o sucesso pode trazer.",
     options: [
       "Procrastinar as tarefas finais e mais importantes.",
@@ -84,7 +84,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "9. Pense na última vez que você desistiu de algo importante. Qual foi a 'desculpa' que você se deu?",
+    question: "Pense na última vez que você desistiu de algo importante. Qual foi a 'desculpa' que você se deu?",
     explanation: "As desculpas que usamos são, na verdade, fachadas para medos mais profundos que não queremos encarar.",
     options: [
       "“Não tenho tempo/dinheiro suficiente agora.”",
@@ -94,7 +94,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "10. O que você faz quando se sente sobrecarregado(a) emocionalmente?",
+    question: "O que você faz quando se sente sobrecarregado(a) emocionalmente?",
     explanation: "A forma como lidamos com o excesso de emoções mostra se estamos processando ou apenas 'varrendo para debaixo do tapete'.",
     options: [
       "Me isolo e evito falar sobre o assunto.",
@@ -106,7 +106,7 @@ export const quizQuestions = [
 
   // Bloco 3: Intuição e Voz Interior
   {
-    question: "11. Com que frequência você ignora sua intuição ou 'voz interior'?",
+    question: "Com que frequência você ignora sua intuição ou 'voz interior'?",
     explanation: "A intuição é a linguagem da alma. Ignorá-la é como navegar em um oceano sem bússola, usando apenas a lógica.",
     options: [
       "Constantemente, e geralmente me arrependo depois.",
@@ -116,7 +116,7 @@ export const quizQuestions = [
     ],
   },
     {
-    question: "12. Qual é a sensação física que você tem quando sabe que algo 'não está certo'?",
+    question: "Qual é a sensação física que você tem quando sabe que algo 'não está certo'?",
     explanation: "Nosso corpo é um sistema de alarme intuitivo. Aprender a ouvir esses sinais é fundamental para o autoconhecimento.",
     options: [
       "Um nó no estômago ou aperto no peito.",
@@ -126,7 +126,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "13. Em que momento do seu dia você se sente mais conectado(a) consigo mesmo(a)?",
+    question: "Em que momento do seu dia você se sente mais conectado(a) consigo mesmo(a)?",
     explanation: "Identificar esses momentos de conexão pode te dar pistas de como criar mais espaços de paz e clareza na sua rotina.",
     options: [
       "Logo ao acordar, antes do mundo 'invadir'.",
@@ -136,7 +136,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "14. A voz da sua autocrítica é mais alta que a da sua autocompaixão?",
+    question: "A voz da sua autocrítica é mais alta que a da sua autocompaixão?",
     explanation: "A autocrítica é a voz do medo e do ego. A autocompaixão é a voz da alma. Qual delas você tem alimentado mais?",
     options: [
       "Sim, meu crítico interno é implacável e grita o tempo todo.",
@@ -146,7 +146,7 @@ export const quizQuestions = [
     ],
   },
    {
-    question: "15. Se sua intuição te desse um único conselho agora, qual você acha que seria?",
+    question: "Se sua intuição te desse um único conselho agora, qual você acha que seria?",
     explanation: "Muitas vezes, no fundo, já sabemos a resposta. Esta pergunta é um convite para deixar essa sabedoria vir à tona.",
     options: [
       "“Desacelere e respire fundo.”",
@@ -158,7 +158,7 @@ export const quizQuestions = [
 
   // Bloco 4: Medo e Coragem
   {
-    question: "16. O quanto você se sente paralisado(a) pelo medo (de falhar, de ser julgado, do futuro)?",
+    question: "O quanto você se sente paralisado(a) pelo medo (de falhar, de ser julgado, do futuro)?",
     explanation: "O medo não é o problema; o problema é quando ele se torna o motorista do seu carro, em vez de ser apenas um passageiro.",
     options: [
       "Muito. O medo dita grande parte das minhas decisões.",
@@ -168,7 +168,7 @@ export const quizQuestions = [
     ],
   },
     {
-    question: "17. Qual é a 'zona de conforto' que você mais teme em abandonar?",
+    question: "Qual é a 'zona de conforto' que você mais teme em abandonar?",
     explanation: "A zona de conforto que mais nos aprisiona é aquela que, embora desconfortável, é familiar. Sair dela é onde a magia acontece.",
     options: [
       "Um trabalho estável, mas que não me preenche.",
@@ -178,7 +178,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "18. Qual foi a última vez que você fez algo que te deu 'frio na barriga' de empolgação?",
+    question: "Qual foi a última vez que você fez algo que te deu 'frio na barriga' de empolgação?",
     explanation: "O 'frio na barriga' é um sinal de que você está vivo(a) e se desafiando. A ausência dele pode indicar estagnação.",
     options: [
       "Não consigo me lembrar. Faz muito tempo.",
@@ -188,7 +188,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "19. O que a palavra 'fracasso' significa para você?",
+    question: "O que a palavra 'fracasso' significa para você?",
     explanation: "A sua definição de fracasso molda sua disposição para correr riscos e aprender com os erros.",
     options: [
       "O fim da linha. Uma prova da minha incapacidade.",
@@ -198,7 +198,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "20. Se você não tivesse medo, qual seria a primeira grande mudança que faria na sua vida amanhã?",
+    question: "Se você não tivesse medo, qual seria a primeira grande mudança que faria na sua vida amanhã?",
     explanation: "Esta pergunta remove a principal barreira e revela o que sua alma realmente deseja fazer, se fosse totalmente livre.",
     options: [
       "Pediria demissão para seguir meu sonho.",
@@ -210,7 +210,7 @@ export const quizQuestions = [
 
   // Bloco 5: Propósito e Realização
   {
-    question: "21. Quando você se imagina no futuro, feliz e realizado(a), o que você está fazendo?",
+    question: "Quando você se imagina no futuro, feliz e realizado(a), o que você está fazendo?",
     explanation: "Essa visão de futuro é um cartão postal da sua alma, mostrando a paisagem onde você se sentiria mais em casa.",
     options: [
       "Vivendo uma vida mais simples e tranquila.",
@@ -220,7 +220,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "22. Que tipo de atividade faz você perder a noção do tempo?",
+    question: "Que tipo de atividade faz você perder a noção do tempo?",
     explanation: "Entrar em 'estado de fluxo' é um dos maiores indicadores de que você está usando seus talentos naturais em algo que ama.",
     options: [
       "Atividades criativas (escrever, pintar, tocar um instrumento).",
@@ -230,7 +230,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "23. Pelo que você gostaria de ser lembrado(a)?",
+    question: "Pelo que você gostaria de ser lembrado(a)?",
     explanation: "Seu legado desejado é a essência do seu propósito. É a marca que sua alma quer deixar no mundo.",
     options: [
       "Pela minha bondade e pela forma como tratei as pessoas.",
@@ -240,7 +240,7 @@ export const quizQuestions = [
     ],
   },
     {
-    question: "24. O que te impede de dedicar mais tempo ao que te traz alegria?",
+    question: "O que te impede de dedicar mais tempo ao que te traz alegria?",
     explanation: "As barreiras entre você e sua alegria são os muros que precisam ser derrubados para viver uma vida com mais propósito.",
     options: [
       "O excesso de responsabilidades e a falta de tempo.",
@@ -250,7 +250,7 @@ export const quizQuestions = [
     ],
   },
   {
-    question: "25. Qual o nível do seu cansaço em relação a viver uma vida que não parece 100% sua?",
+    question: "Qual o nível do seu cansaço em relação a viver uma vida que não parece 100% sua?",
     explanation: "O cansaço da alma é o último chamado para a mudança. É o ponto em que a dor de ficar onde está se torna maior que o medo de mudar.",
     options: [
       "Exaustão total. Sinto que preciso de uma mudança urgente.",
