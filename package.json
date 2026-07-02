@@ -1,8 +1,9 @@
 {
-  "name": "soul-quiz",
+  "name": "storyboard-ai-novelinhas",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Especialista em criar storyboards para novelinhas verticais para redes sociais com IA",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,6 +15,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }

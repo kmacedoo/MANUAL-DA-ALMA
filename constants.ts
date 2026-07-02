@@ -1,262 +1,148 @@
+// Storyboard AI - Novelilhas Verticais para Redes Sociais
 
-export const quizQuestions = [
-  // Bloco 1: Clareza e Direção
-  {
-    question: "Ao olhar para sua vida hoje, qual sentimento predomina?",
-    explanation: "O sentimento geral é como a bússola da sua alma. Ele indica se você está no caminho certo ou se precisa de um novo mapa.",
-    options: [
-      "Uma sensação de estar perdido(a), sem um mapa claro.",
-      "Frustração por sentir que meu potencial está travado.",
-      "Cansaço de repetir os mesmos erros e ciclos.",
-      "Uma curiosidade sobre o que mais a vida tem a oferecer.",
-    ],
-  },
-  {
-    question: "Qual destas frases descreve melhor seu desejo mais profundo no momento?",
-    explanation: "Seu desejo mais profundo é a voz da sua intuição apontando para o que realmente importa para você agora.",
-    options: [
-      "“Eu só queria ter clareza sobre qual caminho seguir.”",
-      "“Eu queria me sentir confiante na minha própria pele.”",
-      "“Eu queria entender por que eu me saboto tanto.”",
-      "“Eu queria sentir uma conexão real com um propósito maior.”",
-    ],
-  },
-  {
-    question: "Se você tivesse um mapa para sua vida, o que você mais gostaria que ele mostrasse?",
-    explanation: "A resposta revela qual área da sua vida mais anseia por direção e clareza neste exato momento.",
-    options: [
-      "O caminho para a carreira/vocação ideal.",
-      "Como ter relacionamentos mais saudáveis e verdadeiros.",
-      "Os passos para me libertar de medos e inseguranças.",
-      "O meu propósito de vida e como vivê-lo.",
-    ],
-  },
-  {
-    question: "Com que frequência você se sente apenas 'seguindo o fluxo', sem um destino definido?",
-    explanation: "Muitas vezes, 'seguir o fluxo' é uma forma de evitar decisões importantes. Isso pode levar a uma sensação de estagnação.",
-    options: [
-      "Quase todos os dias. Sinto que estou no piloto automático.",
-      "Frequentemente, especialmente na minha vida profissional.",
-      "Às vezes, quando estou cansado(a) de tomar decisões.",
-      "Raramente. Eu gosto de ter um senso de direção claro.",
-    ],
-  },
-    {
-    question: "Imagine que você encontrou sua 'tribo'. Como essas pessoas seriam?",
-    explanation: "As pessoas com as quais sonhamos em nos conectar refletem as qualidades que valorizamos e desejamos para nós mesmos.",
-    options: [
-      "Inspiradoras e que me incentivassem a crescer.",
-      "Acolhedoras e com quem eu pudesse ser 100% eu mesmo(a).",
-      "Profundas, com quem eu pudesse ter conversas significativas.",
-      "Alegres e que celebrassem a vida junto comigo.",
-    ],
-  },
+export interface StoryboardScene {
+  id: number;
+  title: string;
+  description: string;
+  visualPrompt: string;
+  dialogue: string;
+  duration: string;
+  cameraAngle: string;
+  emotion: string;
+}
 
-  // Bloco 2: Padrões e Autossabotagem
-  {
-    question: "Seus relacionamentos (amorosos, familiares, amizades) parecem seguir um padrão que se repete?",
-    explanation: "Padrões repetitivos em relacionamentos são como ecos de feridas antigas que ainda não foram curadas.",
-    options: [
-      "Sim, parece que atraio sempre o mesmo tipo de problema.",
-      "Percebo alguns padrões, mas não sei como quebrá-los.",
-      "Não com clareza, mas sinto que algo poderia ser melhor.",
-      "Não, sinto que meus relacionamentos são saudáveis e evoluem.",
-    ],
-  },
-  {
-    question: "Quando algo bom acontece na sua vida, qual é a sua primeira reação interna?",
-    explanation: "Sua reação ao sucesso pode revelar crenças profundas sobre merecimento e o medo de que 'algo vai dar errado'.",
-    options: [
-      "Uma desconfiança, esperando a 'outra bota cair'.",
-      "Uma ansiedade sobre como manter esse novo patamar.",
-      "Uma alegria cautelosa, com medo de comemorar cedo demais.",
-      "Pura gratidão e alegria, abraçando o momento.",
-    ],
-  },
-    {
-    question: "Qual é a sua principal forma de autossabotagem quando está perto de alcançar um objetivo?",
-    explanation: "A autossabotagem é um mecanismo de defesa do ego, que teme a mudança e o desconhecido que o sucesso pode trazer.",
-    options: [
-      "Procrastinar as tarefas finais e mais importantes.",
-      "Começar a duvidar da minha capacidade e merecimento.",
-      "Criar um drama ou um problema para desviar o foco.",
-      "Perder o interesse de repente, como se não quisesse mais aquilo.",
-    ],
-  },
-  {
-    question: "Pense na última vez que você desistiu de algo importante. Qual foi a 'desculpa' que você se deu?",
-    explanation: "As desculpas que usamos são, na verdade, fachadas para medos mais profundos que não queremos encarar.",
-    options: [
-      "“Não tenho tempo/dinheiro suficiente agora.”",
-      "“Não sou bom/boa o suficiente para isso.”",
-      "“As circunstâncias não são as ideais.”",
-      "“Na verdade, eu nem queria tanto assim.”",
-    ],
-  },
-  {
-    question: "O que você faz quando se sente sobrecarregado(a) emocionalmente?",
-    explanation: "A forma como lidamos com o excesso de emoções mostra se estamos processando ou apenas 'varrendo para debaixo do tapete'.",
-    options: [
-      "Me isolo e evito falar sobre o assunto.",
-      "Busco distrações imediatas (comida, redes sociais, séries).",
-      "Tento racionalizar e ignorar o que estou sentindo.",
-      "Permito-me sentir e busco entender a origem da emoção.",
-    ],
-  },
+export interface StoryTemplate {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+}
 
-  // Bloco 3: Intuição e Voz Interior
-  {
-    question: "Com que frequência você ignora sua intuição ou 'voz interior'?",
-    explanation: "A intuição é a linguagem da alma. Ignorá-la é como navegar em um oceano sem bússola, usando apenas a lógica.",
-    options: [
-      "Constantemente, e geralmente me arrependo depois.",
-      "Frequentemente, porque a lógica ou o medo falam mais alto.",
-      "Às vezes, quando estou inseguro(a).",
-      "Raramente, tento sempre ouvir a mim mesmo(a).",
-    ],
-  },
-    {
-    question: "Qual é a sensação física que você tem quando sabe que algo 'não está certo'?",
-    explanation: "Nosso corpo é um sistema de alarme intuitivo. Aprender a ouvir esses sinais é fundamental para o autoconhecimento.",
-    options: [
-      "Um nó no estômago ou aperto no peito.",
-      "Uma sensação de peso nos ombros, um cansaço súbito.",
-      "Uma inquietação, uma vontade de 'fugir' do lugar.",
-      "Uma clareza mental que me diz para ter cautela.",
-    ],
-  },
-  {
-    question: "Em que momento do seu dia você se sente mais conectado(a) consigo mesmo(a)?",
-    explanation: "Identificar esses momentos de conexão pode te dar pistas de como criar mais espaços de paz e clareza na sua rotina.",
-    options: [
-      "Logo ao acordar, antes do mundo 'invadir'.",
-      "Durante uma atividade criativa ou um hobby.",
-      "Em contato com a natureza.",
-      "É raro eu me sentir verdadeiramente conectado(a).",
-    ],
-  },
-  {
-    question: "A voz da sua autocrítica é mais alta que a da sua autocompaixão?",
-    explanation: "A autocrítica é a voz do medo e do ego. A autocompaixão é a voz da alma. Qual delas você tem alimentado mais?",
-    options: [
-      "Sim, meu crítico interno é implacável e grita o tempo todo.",
-      "Sim, mas estou tentando ser mais gentil comigo.",
-      "Elas estão em equilíbrio, depende do dia.",
-      "Não, aprendi a me tratar com mais compaixão.",
-    ],
-  },
-   {
-    question: "Se sua intuição te desse um único conselho agora, qual você acha que seria?",
-    explanation: "Muitas vezes, no fundo, já sabemos a resposta. Esta pergunta é um convite para deixar essa sabedoria vir à tona.",
-    options: [
-      "“Desacelere e respire fundo.”",
-      "“Tenha coragem de dizer não.”",
-      "“Confie que você está no caminho certo.”",
-      "“Pare de se preocupar tanto com o que os outros pensam.”",
-    ],
-  },
+export interface AspectRatio {
+  id: string;
+  name: string;
+  width: number;
+  height: number;
+}
 
-  // Bloco 4: Medo e Coragem
+export const storyTemplates: StoryTemplate[] = [
   {
-    question: "O quanto você se sente paralisado(a) pelo medo (de falhar, de ser julgado, do futuro)?",
-    explanation: "O medo não é o problema; o problema é quando ele se torna o motorista do seu carro, em vez de ser apenas um passageiro.",
-    options: [
-      "Muito. O medo dita grande parte das minhas decisões.",
-      "Bastante. Muitas vezes deixo de fazer coisas por causa dele.",
-      "Um pouco, mas geralmente consigo superá-lo.",
-      "Quase nada. Vejo o medo como um impulso, não uma barreira.",
-    ],
-  },
-    {
-    question: "Qual é a 'zona de conforto' que você mais teme em abandonar?",
-    explanation: "A zona de conforto que mais nos aprisiona é aquela que, embora desconfortável, é familiar. Sair dela é onde a magia acontece.",
-    options: [
-      "Um trabalho estável, mas que não me preenche.",
-      "Relacionamentos mornos, mas previsíveis.",
-      "O hábito de não me expor para evitar críticas.",
-      "A imagem que construí para os outros, mesmo que não seja real.",
-    ],
+    id: 'romance',
+    name: 'Romance Dramático',
+    description: 'Histórias de amor com reviravoltas emocionantes',
+    icon: '💕'
   },
   {
-    question: "Qual foi a última vez que você fez algo que te deu 'frio na barriga' de empolgação?",
-    explanation: "O 'frio na barriga' é um sinal de que você está vivo(a) e se desafiando. A ausência dele pode indicar estagnação.",
-    options: [
-      "Não consigo me lembrar. Faz muito tempo.",
-      "Foi há alguns meses, em uma situação específica.",
-      "Recentemente, ao iniciar um novo projeto ou hobby.",
-      "Sinto isso com frequência, amo me sentir desafiado(a).",
-    ],
+    id: 'mystery',
+    name: 'Mistério & Suspense',
+    description: 'Enredos intrigantes que prendem a atenção',
+    icon: '🔍'
   },
   {
-    question: "O que a palavra 'fracasso' significa para você?",
-    explanation: "A sua definição de fracasso molda sua disposição para correr riscos e aprender com os erros.",
-    options: [
-      "O fim da linha. Uma prova da minha incapacidade.",
-      "Algo a ser evitado a todo custo.",
-      "Uma oportunidade de aprendizado, embora dolorosa.",
-      "Apenas um degrau necessário no caminho para o sucesso.",
-    ],
+    id: 'comedy',
+    name: 'Comédia',
+    description: 'Situações engraçadas e divertidas',
+    icon: '😂'
   },
   {
-    question: "Se você não tivesse medo, qual seria a primeira grande mudança que faria na sua vida amanhã?",
-    explanation: "Esta pergunta remove a principal barreira e revela o que sua alma realmente deseja fazer, se fosse totalmente livre.",
-    options: [
-      "Pediria demissão para seguir meu sonho.",
-      "Teria uma conversa difícil, mas necessária, com alguém.",
-      "Me mudaria para outra cidade ou país.",
-      "Começaria aquele projeto que está na gaveta há anos.",
-    ],
+    id: 'drama',
+    name: 'Drama Familiar',
+    description: 'Conflitos e emoções da vida familiar',
+    icon: '👨‍👩‍👧‍👦'
   },
+  {
+    id: 'fantasy',
+    name: 'Fantasia Urbana',
+    description: 'Elementos mágicos no mundo moderno',
+    icon: '✨'
+  },
+  {
+    id: 'thriller',
+    name: 'Thriller Psicológico',
+    description: 'Tensão e suspense psicológico',
+    icon: '🎭'
+  },
+  {
+    id: 'slice_of_life',
+    name: 'Slice of Life',
+    description: 'Histórias cotidianas e inspiradoras',
+    icon: '☀️'
+  },
+  {
+    id: 'supernatural',
+    name: 'Sobrenatural',
+    description: 'Mistérios além do mundo natural',
+    icon: '🌙'
+  }
+];
 
-  // Bloco 5: Propósito e Realização
+export const aspectRatios: AspectRatio[] = [
+  { id: '9:16', name: 'Vertical (TikTok/Reels/Shorts)', width: 1080, height: 1920 },
+  { id: '4:5', name: 'Instagram Feed', width: 1080, height: 1350 },
+  { id: '1:1', name: 'Quadrado', width: 1080, height: 1080 }
+];
+
+export const cameraAngles = [
+  'Close-up (rosto)',
+  'Plano médio (cintura para cima)',
+  'Plano aberto (corpo inteiro)',
+  'Ângulo baixo (poder)',
+  'Ângulo alto (vulnerabilidade)',
+  'Over the shoulder (sobre o ombro)',
+  'POV (ponto de vista)',
+  'Dutch angle (inclinado)'
+];
+
+export const emotions = [
+  'Alegria/Euforia',
+  'Tristeza/Melancolia',
+  'Raiva/Fúria',
+  'Medo/Terror',
+  'Surpresa/Choque',
+  'Amor/Paixão',
+  'Nostalgia/Saudade',
+  'Determinação/Foco',
+  'Confusão/Dúvida',
+  'Alívio/Paz'
+];
+
+export const defaultSystemPrompt = `Você é um especialista em criação de storyboards para novelinhas verticais de redes sociais (TikTok, Instagram Reels, YouTube Shorts).
+
+Sua tarefa é criar storyboards envolventes e otimizados para o formato vertical.
+
+Para cada cena, inclua:
+1. Título descritivo da cena
+2. Descrição visual detalhada (cenário, personagens, ações)
+3. Prompt visual para IA de geração de imagens
+4. Diálogo ou narração
+5. Duração estimada (em segundos)
+6. Ângulo de câmera recomendado
+7. Emoção predominante
+
+Considere:
+- Formato vertical (9:16)
+- Ritmo acelerado para prender atenção
+- Ganchos visuais nos primeiros 3 segundos
+- Legendas claras e objetivas
+- Transições suaves entre cenas`;
+
+export const sampleStories = [
   {
-    question: "Quando você se imagina no futuro, feliz e realizado(a), o que você está fazendo?",
-    explanation: "Essa visão de futuro é um cartão postal da sua alma, mostrando a paisagem onde você se sentiria mais em casa.",
-    options: [
-      "Vivendo uma vida mais simples e tranquila.",
-      "Causando um impacto positivo no mundo.",
-      "Desfrutando de liberdade financeira e geográfica.",
-      "Cercado(a) de amor e relacionamentos verdadeiros.",
-    ],
+    title: 'O Segredo da Vizinha',
+    genre: 'mystery',
+    logline: 'Uma jovem descobre que sua vizinha perfeita esconde um segredo sombrio.',
+    scenes: 8
   },
   {
-    question: "Que tipo de atividade faz você perder a noção do tempo?",
-    explanation: "Entrar em 'estado de fluxo' é um dos maiores indicadores de que você está usando seus talentos naturais em algo que ama.",
-    options: [
-      "Atividades criativas (escrever, pintar, tocar um instrumento).",
-      "Aprender algo novo e desafiador.",
-      "Ajudar ou aconselhar alguém.",
-      "Organizar ou planejar algo.",
-    ],
+    title: 'Amor no Café',
+    genre: 'romance',
+    logline: 'Dois estranhos se encontram diariamente no mesmo café sem nunca terem se falado.',
+    scenes: 6
   },
   {
-    question: "Pelo que você gostaria de ser lembrado(a)?",
-    explanation: "Seu legado desejado é a essência do seu propósito. É a marca que sua alma quer deixar no mundo.",
-    options: [
-      "Pela minha bondade e pela forma como tratei as pessoas.",
-      "Pela minha coragem e por ter vivido sem arrependimentos.",
-      "Pela minha criatividade e pelas coisas que construí.",
-      "Pela minha sabedoria e pelos ensinamentos que compartilhei.",
-    ],
-  },
-    {
-    question: "O que te impede de dedicar mais tempo ao que te traz alegria?",
-    explanation: "As barreiras entre você e sua alegria são os muros que precisam ser derrubados para viver uma vida com mais propósito.",
-    options: [
-      "O excesso de responsabilidades e a falta de tempo.",
-      "A crença de que isso é 'egoísmo' ou não é produtivo.",
-      "A falta de energia no final do dia.",
-      "O medo de não ser bom/boa o suficiente nisso.",
-    ],
-  },
-  {
-    question: "Qual o nível do seu cansaço em relação a viver uma vida que não parece 100% sua?",
-    explanation: "O cansaço da alma é o último chamado para a mudança. É o ponto em que a dor de ficar onde está se torna maior que o medo de mudar.",
-    options: [
-      "Exaustão total. Sinto que preciso de uma mudança urgente.",
-      "Muito cansado(a). Sei que algo precisa mudar, mas não sei por onde começar.",
-      "Um pouco desgastado(a). A vida é boa, mas falta 'algo'.",
-      "Não me sinto assim. Estou alinhado(a) com a vida que levo.",
-    ],
-  },
+    title: 'A Herança Maldita',
+    genre: 'supernatural',
+    logline: 'Após herdar uma casa antiga, uma família começa a experiencing fenômenos inexplicáveis.',
+    scenes: 10
+  }
 ];

@@ -1,20 +1,87 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🎬 Storyboard AI - Novelinhas Verticais para Redes Sociais
 
-# Run and deploy your AI Studio app
+Uma plataforma especializada em criar storyboards para novelinhas verticais otimizadas para redes sociais (TikTok, Instagram Reels, YouTube Shorts) usando Inteligência Artificial.
 
-This contains everything you need to run your app locally.
+## ✨ Funcionalidades
 
-View your app in AI Studio: https://ai.studio/apps/drive/10i3AMbNH8_7PXM7nQWqE7P0GXnsB0mYU
+- **8 Gêneros de Histórias**: Romance, Mistério, Comédia, Drama, Fantasia, Thriller, Slice of Life e Sobrenatural
+- **Formatos Otimizados**: 9:16 (Vertical), 4:5 (Instagram Feed), 1:1 (Quadrado)
+- **Storyboards Detalhados**: Cada cena inclui:
+  - Descrição visual completa
+  - Prompt para IA de geração de imagens
+  - Diálogo/narração
+  - Duração estimada
+  - Ângulo de câmera
+  - Emoção predominante
+- **Interface Moderna**: Design responsivo com gradientes e animações
+- **Geração Rápida**: Crie storyboards completos em segundos
 
-## Run Locally
+## 🚀 Tecnologias
 
-**Prerequisites:**  Node.js
+- React 19
+- TypeScript
+- Vite
+- CSS Moderno com gradientes e efeitos
 
+## 📦 Instalação
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+```
+
+## 🛠️ Desenvolvimento
+
+```bash
+npm run dev
+```
+
+## 🏗️ Build
+
+```bash
+npm run build
+```
+
+## 📱 Plataformas Suportadas
+
+- TikTok
+- Instagram Reels
+- YouTube Shorts
+- Snapchat Spotlight
+- Facebook Reels
+
+## 🎯 Casos de Uso
+
+- Criadores de conteúdo para redes sociais
+- Agências de marketing digital
+- Produtores de vídeo
+- Roteiristas
+- Diretores de criação
+
+## 📝 Estrutura do Projeto
+
+```
+/workspace
+├── App.tsx              # Componente principal
+├── constants.ts         # Configurações e templates
+├── index.tsx           # Ponto de entrada
+├── index.html          # HTML base
+├── package.json        # Dependências
+└── README.md           # Este arquivo
+```
+
+## 🔮 Próximas Funcionalidades
+
+- Integração com APIs de IA (OpenAI, Stability AI, Midjourney)
+- Exportação em PDF/PNG
+- Biblioteca de storyboards salvos
+- Colaboração em equipe
+- Templates pré-definidos
+- Análise de performance por plataforma
+
+## 📄 Licença
+
+MIT
+
+---
+
+**Criado com ❤️ para criadores de conteúdo**
